@@ -31,20 +31,19 @@ section{
     .circle {
         width: 17rem;
         height: 17rem;
-        border:3px solid $braon;
-        border-radius: 50%;
         margin: 0 .5rem;
         padding: 1rem;
         img{
             width: 100%;
             height: 100%;
             border-radius: 50%;    
+    }   
     }
+    .circle:hover{
+        opacity: 0.5;
     }
 }
-.circle:hover {
-    border: 3px solid $roze;
-}
+
 @media (max-width:300px) {
     * {
         font-size: 30%;

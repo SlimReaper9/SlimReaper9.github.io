@@ -1,0 +1,21 @@
+@import '../../../style/variables.scss';
+.filter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3rem 0;
+    .box{
+        font-size: 1.6rem;
+        font-weight: 600;
+        text-transform: lowercase;
+        color: $tamna-braon;
+        
+        margin-right: 2rem;
+        padding: .5rem 1rem;
+       
+    }
+    .box:hover{
+        opacity: 0.5;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,51 @@
+@import '../../../style/variables.scss';
+.block{
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    .image{
+        margin-bottom: 3rem;
+        text-align: center;
+        img{
+            width: 50%;
+        }
+    }
+    .designer {
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-weight: 200;
+        margin-bottom: 1rem;
+    }
+    .name{
+        font-weight: 700;
+        font-size: 1.7rem;
+        color: $tamna-braon;
+        margin-bottom: 1rem;
+    }
+    .ml {
+        font-size: 1.4rem;
+        font-weight: 400;
+        margin-bottom: 2rem;
+    }
+    .box{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .price {
+            margin-right: 5rem;
+            font-size: 1.7rem;
+            font-weight: 700;
+        }
+        .rating {
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+    }
+}
+.block:hover{
+    box-shadow: -1px 0px 44px -19px rgba(0,0,0,0.82);
+}
