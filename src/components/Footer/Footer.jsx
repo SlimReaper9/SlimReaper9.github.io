@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className={s.footer}>
         <div className={s.flex}>
-            <div className={s.media}></div>
+            <div className={s.media}>ee</div>
             <div className={s.cards}></div>
         </div>
     </footer>
