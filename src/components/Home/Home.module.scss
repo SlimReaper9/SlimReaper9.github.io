@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+@import '../../style/variables.scss';
+*{
+    font-family: 'Rubik', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    transition: .2s linear;
+    font-size: 62.5%;
+    
+   scroll-behavior: smooth;
+ }
+section{
+    max-width: 1200px;
+    margin:0 auto;
+    padding:2rem;
+ }
+
+.carousel {
+    
+    background-color: $standardna;
+}
+
+.brands {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid $tamna-braon;
+    border-bottom: 2px solid $tamna-braon;
+    .circle {
+        width: 17rem;
+        height: 17rem;
+        border:3px solid $braon;
+        border-radius: 50%;
+        margin: 0 .5rem;
+        padding: 1rem;
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;    
+    }
+    }
+}
+.circle:hover {
+    border: 3px solid $roze;
+}
+@media (max-width:300px) {
+    * {
+        font-size: 30%;
+    }
+    
+    .brands .circle {
+        max-height: 9rem;
+        border:1px solid $tamna-braon
+    }
+}
+@media (min-width:301px) and (max-width:416px) {
+    * {
+        font-size: 30%;
+    }
+    .brands .circle {
+        max-height: 12rem;
+        border:2px solid $tamna-braon
+    }
+}
+@media (min-width:412px) and (max-width: 576px) {
+    * {
+        font-size: 42%;
+    }
+    .brands .circle {
+        max-height: 12rem;
+    }
+}
+@media (min-width:577px) and (max-width:1024px) {
+    * {
+        font-size: 50%;
+    }
+}

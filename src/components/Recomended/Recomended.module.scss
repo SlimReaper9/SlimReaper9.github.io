@@ -1,0 +1,37 @@
+@import '../../style/variables.scss';
+.baner {
+    margin: 0 auto;
+    background-color: $roze;
+        width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 5rem;
+    margin-bottom: 2rem;
+    span {
+        text-transform: lowercase;
+        font-weight: bold;
+        font-size: 2.2rem;
+        color: $tamna-braon;
+        
+    }
+}
+.slider {
+    max-height: 50rem;
+    .slide {
+        width: calc((100% - 4rem)/4);
+        box-shadow: 1;
+        img{
+            width: 100%;
+        }
+    }
+}
+.offer {
+    margin:2rem 0 0 0;
+    img {
+        width: 100%;
+    }
+    img:hover{
+        opacity: 0.9;
+    }
+}

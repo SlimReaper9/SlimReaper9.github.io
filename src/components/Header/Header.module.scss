@@ -1,0 +1,68 @@
+@import '../../style/variables.scss';
+.header{
+    position: sticky;
+    width: 100%;
+    border-bottom: 2px solid $tamna-braon;
+    background-color:$roze ;
+    color: $tamna-braon;
+    .flex{
+        padding:0 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        .logo{
+            font-size: 2.5rem;
+            img{
+                width: 10rem;
+                height: 10rem;
+                color: $roze;
+            }
+         }
+        .navbar a{
+            
+            margin:0 1rem;
+            font-size: 2rem;
+            color: $tamna-braon;
+         }
+        .navbar a:hover{
+            color: $bela;
+            border-bottom: 1px solid $bela;
+         }
+        .icons {
+            font-size: 2.5rem;
+            display: flex;
+            flex-direction: row;
+          
+            
+            align-items: center;
+            cursor: pointer;
+            color:black;
+            img{
+                width: 3.5rem;
+                height: 3.5rem;
+            }
+            .menu {
+                margin-left: 1rem;
+                display: none;
+            }
+         }
+        }  
+}
+@keyframes fadeIn {
+    0%{
+       transform: translateY(1rem);
+    }
+ }
+ 
+@media (max-width:411px) {
+    .header .flex .icons .menu {
+        display: block;
+    }
+    .header .flex .navbar {
+        display: none;
+    }
+}
+ 
+
+ 
