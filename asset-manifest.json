@@ -1,19 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.e64cfb57.css",
-    "main.js": "/static/js/main.30822c29.js",
+    "main.css": "/static/css/main.7be0d6f0.css",
+    "main.js": "/static/js/main.36563f7d.js",
     "static/media/gucci.webp": "/static/media/gucci.61efedb47da0e064da02.webp",
     "static/media/PDM.jpg": "/static/media/PDM.7e55f833eae3dfdd0240.jpg",
     "static/media/dior.jpg": "/static/media/dior.53a3b18fd04e54c546e6.jpg",
     "static/media/chanel.jpeg": "/static/media/chanel.050393b0f708a388b3ff.jpeg",
     "static/media/Logo.png": "/static/media/Logo.7f181c9e3a573e79a57c.png",
     "static/media/cart.png": "/static/media/cart.96c73cb49987ccdf1154.png",
+    "static/media/trash-can-regular.svg": "/static/media/trash-can-regular.12fcd78cfff02b4db324c26b1d1fcaff.svg",
     "index.html": "/index.html",
-    "main.e64cfb57.css.map": "/static/css/main.e64cfb57.css.map",
-    "main.30822c29.js.map": "/static/js/main.30822c29.js.map"
+    "static/media/x-solid.svg": "/static/media/x-solid.74f662e4ac0f2e8416b3487ab42f3170.svg",
+    "static/media/plus-solid.svg": "/static/media/plus-solid.f3ca0f0290870ffb457a7aed0a2acab9.svg",
+    "static/media/minus-solid.svg": "/static/media/minus-solid.e6962d4324b2e734a98fb786daef41c6.svg",
+    "main.7be0d6f0.css.map": "/static/css/main.7be0d6f0.css.map",
+    "main.36563f7d.js.map": "/static/js/main.36563f7d.js.map"
   },
   "entrypoints": [
-    "static/css/main.e64cfb57.css",
-    "static/js/main.30822c29.js"
+    "static/css/main.7be0d6f0.css",
+    "static/js/main.36563f7d.js"
   ]
 }
