@@ -1,24 +1,33 @@
 {
   "files": {
-    "main.css": "/static/css/main.354090e5.css",
-    "main.js": "/static/js/main.bd278430.js",
+    "main.css": "/static/css/main.2e392fc9.css",
+    "main.js": "/static/js/main.724b448e.js",
     "static/media/gucci.webp": "/static/media/gucci.61efedb47da0e064da02.webp",
+    "static/media/italy.png": "/static/media/italy.77b23fa6935c3109b66e.png",
     "static/media/PDM.jpg": "/static/media/PDM.7e55f833eae3dfdd0240.jpg",
     "static/media/dior.jpg": "/static/media/dior.53a3b18fd04e54c546e6.jpg",
     "static/media/chanel.jpeg": "/static/media/chanel.050393b0f708a388b3ff.jpeg",
     "static/media/Logo.png": "/static/media/Logo.7f181c9e3a573e79a57c.png",
+    "static/media/france.png": "/static/media/france.73f91b4e96d67f8a03f0.png",
     "static/media/empty-cart.png": "/static/media/empty-cart.b5fe7e5c334490fa84e5.png",
     "static/media/cart.png": "/static/media/cart.96c73cb49987ccdf1154.png",
+    "static/media/snowflake-solid.svg": "/static/media/snowflake-solid.ce3e7839b86f55e47c9831c55bcdf788.svg",
     "static/media/trash-can-regular.svg": "/static/media/trash-can-regular.12fcd78cfff02b4db324c26b1d1fcaff.svg",
+    "static/media/star-regular.svg": "/static/media/star-regular.386f3250f7bd910bd696c3d3a01143fb.svg",
+    "static/media/sun-solid.svg": "/static/media/sun-solid.06f0835cf65bae216083a5ee723e1961.svg",
     "index.html": "/index.html",
+    "static/media/umbrella-beach-solid.svg": "/static/media/umbrella-beach-solid.945c32ba19c03739513b406afc622a1a.svg",
+    "static/media/tree-solid.svg": "/static/media/tree-solid.0903b908f41a67d0ac2f7255e5716fc5.svg",
+    "static/media/leaf-solid.svg": "/static/media/leaf-solid.c121fb5e38e36633f8480e4d2e428a44.svg",
     "static/media/x-solid.svg": "/static/media/x-solid.74f662e4ac0f2e8416b3487ab42f3170.svg",
+    "static/media/moon-solid.svg": "/static/media/moon-solid.31dce64e377cc770c0ee812a62e6b74d.svg",
     "static/media/plus-solid.svg": "/static/media/plus-solid.f3ca0f0290870ffb457a7aed0a2acab9.svg",
     "static/media/minus-solid.svg": "/static/media/minus-solid.e6962d4324b2e734a98fb786daef41c6.svg",
-    "main.354090e5.css.map": "/static/css/main.354090e5.css.map",
-    "main.bd278430.js.map": "/static/js/main.bd278430.js.map"
+    "main.2e392fc9.css.map": "/static/css/main.2e392fc9.css.map",
+    "main.724b448e.js.map": "/static/js/main.724b448e.js.map"
   },
   "entrypoints": [
-    "static/css/main.354090e5.css",
-    "static/js/main.bd278430.js"
+    "static/css/main.2e392fc9.css",
+    "static/js/main.724b448e.js"
   ]
 }
