@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5ccc9d2b.css",
-    "main.js": "/static/js/main.a45de788.js",
+    "main.css": "/static/css/main.22b2341d.css",
+    "main.js": "/static/js/main.328d8ed6.js",
     "static/media/gucci.webp": "/static/media/gucci.61efedb47da0e064da02.webp",
     "static/media/italy.png": "/static/media/italy.77b23fa6935c3109b66e.png",
     "static/media/PDM.jpg": "/static/media/PDM.7e55f833eae3dfdd0240.jpg",
@@ -23,11 +23,11 @@
     "static/media/moon-solid.svg": "/static/media/moon-solid.31dce64e377cc770c0ee812a62e6b74d.svg",
     "static/media/plus-solid.svg": "/static/media/plus-solid.f3ca0f0290870ffb457a7aed0a2acab9.svg",
     "static/media/minus-solid.svg": "/static/media/minus-solid.e6962d4324b2e734a98fb786daef41c6.svg",
-    "main.5ccc9d2b.css.map": "/static/css/main.5ccc9d2b.css.map",
-    "main.a45de788.js.map": "/static/js/main.a45de788.js.map"
+    "main.22b2341d.css.map": "/static/css/main.22b2341d.css.map",
+    "main.328d8ed6.js.map": "/static/js/main.328d8ed6.js.map"
   },
   "entrypoints": [
-    "static/css/main.5ccc9d2b.css",
-    "static/js/main.a45de788.js"
+    "static/css/main.22b2341d.css",
+    "static/js/main.328d8ed6.js"
   ]
 }
