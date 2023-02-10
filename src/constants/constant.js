@@ -1,3 +1,9 @@
+import winterLogo from '../assets/snowflake-solid.svg';
+import springLogo from '../assets/leaf-solid.svg';
+import summerLogo from '../assets/umbrella-beach-solid.svg';
+import fallLogo from '../assets/tree-solid.svg';
+import dayLogo from '../assets/sun-solid.svg';
+import nightLogo from '../assets/moon-solid.svg';
 export const specialOfferBox = [
   {
     id: 'cshop',
@@ -65,5 +71,31 @@ export const media = [
     id: 4,
     imgUrl:
       'https://www.theperfumeshop.com/medias/sys_master/root/10683441872926/footer-instagram.png',
+  },
+];
+export const seasonLogos = [
+  {
+    id: 0,
+    logo: winterLogo,
+  },
+  {
+    id: 1,
+    logo: springLogo,
+  },
+  {
+    id: 2,
+    logo: summerLogo,
+  },
+  {
+    id: 3,
+    logo: fallLogo,
+  },
+  {
+    id: 4,
+    logo: dayLogo,
+  },
+  {
+    id: 5,
+    logo: nightLogo,
   },
 ];

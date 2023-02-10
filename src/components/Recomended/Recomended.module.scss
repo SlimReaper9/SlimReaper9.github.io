@@ -9,7 +9,7 @@
     line-height: 5rem;
     margin-bottom: 2rem;
     span {
-        text-transform: lowercase;
+        text-transform:lowercase;
         font-weight: bold;
         font-size: 2.2rem;
         color: $tamna-braon;
@@ -21,9 +21,12 @@
     .slide {
         width: calc((100% - 4rem)/4);
         box-shadow: 1;
+        text-align: center;
         img{
-            width: 100%;
-        }
+             width: 70%;
+            }
+        
+        
     }
 }
 .offer {

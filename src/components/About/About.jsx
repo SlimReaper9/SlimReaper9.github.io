@@ -1,8 +1,9 @@
 import React from 'react'
+import s from './About.module.scss'
 
 const About = () => {
   return (
-    <div>About</div>
+    <div className={s.wrapper}>About</div>
   )
 }
 

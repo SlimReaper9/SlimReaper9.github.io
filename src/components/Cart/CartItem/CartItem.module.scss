@@ -1,0 +1,93 @@
+@import '../../../style/variables.scss';
+.item {
+    display: flex;
+    flex-direction: row;
+    align-items:  center;
+    justify-content: center;
+    padding: 1rem 0;
+    position: relative;
+    .image {
+        text-align: center;
+        width: calc(100% / 7);
+        img{
+            width: 50%;
+        }
+    }
+    .designer {
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-weight: 200;
+        width: calc(100% / 7);
+    }
+    .name{
+        font-weight: 700;
+        font-size: 1.7rem;
+        color: $tamna-braon;
+        width: calc(100% / 7);
+    }
+    .box {
+        display: flex;
+        flex-direction: row;
+        width: calc(100% / 7);
+        align-items: center;
+        
+        text-align: center;
+        .changer{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            
+            span {
+                font-size: 1.7rem;
+                font-weight: 700;
+                margin: 0 .5rem;
+            }
+            img {
+                width: 1.5rem;
+            }
+            img:hover{
+                cursor: pointer;
+                background-color: $roze;
+            }
+            
+        }
+    }
+    .price {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: $tamna-braon;
+        display: flex;
+        flex-direction: row;
+        width: calc(100% / 7);
+        padding-left: 3rem;
+        span{
+            font-size: 1.3rem;
+            line-height: 1.7rem;
+        }
+    }
+    .deleteItem{
+        padding: .5rem;
+        width: calc(100% / 7);
+        display: flex;
+        align-items: center;
+        position: relative;
+        img{
+            width: 10%;
+            position: absolute;
+            right: 2rem;
+        }
+    }
+    
+}
+.item:hover{
+    box-shadow: -1px 0px 44px -19px rgba(0,0,0,0.82);
+    
+           
+    .deleteItem{
+        img:hover{
+            width: 12%;
+            cursor: pointer;  
+    }
+              }
+    }

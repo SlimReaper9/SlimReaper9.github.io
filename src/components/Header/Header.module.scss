@@ -1,68 +1,96 @@
 @import '../../style/variables.scss';
-.header{
-    position: sticky;
-    width: 100%;
-    border-bottom: 2px solid $tamna-braon;
-    background-color:$roze ;
-    color: $tamna-braon;
-    .flex{
-        padding:0 3rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        position: relative;
-        .logo{
-            font-size: 2.5rem;
-            img{
-                width: 10rem;
-                height: 10rem;
-                color: $roze;
-            }
-         }
-        .navbar a{
-            
-            margin:0 1rem;
-            font-size: 2rem;
-            color: $tamna-braon;
-         }
-        .navbar a:hover{
-            color: $bela;
-            border-bottom: 1px solid $bela;
-         }
-        .icons {
-            font-size: 2.5rem;
-            display: flex;
-            flex-direction: row;
-          
-            
-            align-items: center;
-            cursor: pointer;
-            color:black;
-            img{
-                width: 3.5rem;
-                height: 3.5rem;
-            }
-            .menu {
-                margin-left: 1rem;
-                display: none;
-            }
-         }
-        }  
-}
-@keyframes fadeIn {
-    0%{
-       transform: translateY(1rem);
-    }
- }
- 
-@media (max-width:411px) {
-    .header .flex .icons .menu {
-        display: block;
-    }
-    .header .flex .navbar {
-        display: none;
-    }
-}
- 
 
+.header {
+  position: sticky;
+  width: 100%;
+  border-bottom: 2px solid $tamna-braon;
+  background-color: $roze;
+  color: $tamna-braon;
+  .boxmenu {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 8rem;
+    line-height: 4rem;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    opacity: 1;
+    color: $bela;
+    a:hover {
+        color: $roze;
+    }
+  }
+  .flex {
+    padding: 0 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    .logo {
+      font-size: 2.5rem;
+      img {
+        width: 10rem;
+        height: 10rem;
+        color: $roze;
+      }
+    }
+    .navbar a {
+      margin: 0 1rem;
+      font-size: 2rem;
+      color: $tamna-braon;
+    }
+    .navbar a:hover {
+      color: $bela;
+      border-bottom: 1px solid $bela;
+    }
+    .icons {
+      font-size: 2.5rem;
+      display: flex;
+      flex-direction: row;
+      width: 10%;
+
+      align-items: center;
+      cursor: pointer;
+      color: black;
+      span {
+        font-size: 2rem;
+      }
+      a {
+        color: inherit;
+      }
+      img {
+        width: 3.5rem;
+        height: 3.5rem;
+      }
+      .menu {
+        display: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translateY(1rem);
+  }
+}
+
+@media (max-width: 460px) {
+  .header .flex .icons .menu {
+    display: block;
+  }
+  .header .flex .navbar {
+    display: none;
+  }
  
+  .header .flex .icons span {
+    margin-left: -2rem;
+  }
+}

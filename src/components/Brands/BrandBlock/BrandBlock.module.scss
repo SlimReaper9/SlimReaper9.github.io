@@ -1,0 +1,17 @@
+.box {
+    text-align: center;
+    font-size: 2.7rem;
+    font-weight: 400;
+    padding: 1rem 0;
+    img {
+        width: 50%;
+    }
+}
+.box:hover{
+    box-shadow: -1px 0px 44px -19px rgba(0,0,0,0.82);
+    cursor: pointer;
+    color:rgb(141, 81, 132)
+}
+a{
+    color: inherit;
+}

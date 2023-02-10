@@ -2,14 +2,143 @@
 .footer{
     position: sticky;
     width: 100%;
-    border-bottom: 2px solid $tamna-braon;
+    border-top: 2px solid $tamna-braon;
     background-color:$roze ;
     color: $tamna-braon;
+    padding: 2rem 4rem;
     .flex{
-        padding:0 3rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
         position: relative;
+        .menu{
+            display: flex;
+            width: calc(100% / 3);
+            justify-content: flex-start;
+            flex-direction: row;
+            align-items:flex-start;
+            a{
+                padding: 0.5rem 1rem;
+                font-size: 1.5rem;
+                color: inherit;
+                font-weight: 500;
+            }
+            a:hover{
+                color: $bela;
+            }
+        }
+        .media{
+            display: flex;
+            justify-content: center;
+            width: calc(100% / 3);
+            .mediaBox{
+                margin-right: .2rem;
+                
+                img{
+                    border: 1px solid $roze;
+                    border-radius: 50%;
+                }
+                img:hover{
+                    border-color: $tamna-braon;
+                    cursor: pointer;
+                }
+            }
+        }
+        .cards{
+            display: flex;
+            justify-content: flex-end;
+            width: calc(100% / 3);
+            .cardBox{
+                margin-left: .2rem;
+            }
+        }
+    }
+    .name{
+        margin: 1rem 0;
+        font-size: 1.2rem;
+        font-weight: 300;
+        text-align: center;
+    }
+}
+
+@media (max-width:300px) {
+    * {
+        font-size: 30%;
+    }
+    .footer {
+        padding-top: 1rem;
+    }
+    .footer .flex{
+        flex-direction: column;
+    }
+    .footer .flex .menu {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .footer .flex .media img{
+        width: 100%;
+    }
+}
+@media (min-width:301px) and (max-width:416px) {
+    * {
+        font-size: 30%;
+    }
+    .footer {
+        padding-top: 1rem;
+    }
+    .footer .flex{
+        flex-direction: column;
+    }
+    .footer .flex .menu {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .footer .flex .media img{
+        width: 100%;
+    }
+    .footer .flex .cards {
+        justify-content: center;
+        margin-top: .5rem;
+    }
+    section {
+        padding: 0;
+    }
+}
+@media (min-width:412px) and (max-width: 576px) {
+    * {
+        font-size: 42%;
+    }
+    .footer {
+        padding-top: 1rem;
+    }
+    .footer .flex{
+        flex-direction: column;
+    }
+    .footer .flex .menu {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .footer .flex .cards {
+        justify-content: center;
+        margin-top: .5rem;
+    }
+    .footer .flex .media img{
+        width: 100%;
+    }
+}
+
+@media (min-width:577px) and (max-width:1024px) {
+    .brands .circle {
+        height: 12rem;
+    }
+   
+    .footer .flex .media img{
+        width: 70%;
+    }
+    .footer .flex .menu a{
+        padding: 0 .3rem;
     }
 }

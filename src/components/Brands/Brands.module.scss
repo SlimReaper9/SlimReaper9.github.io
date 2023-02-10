@@ -1,0 +1,60 @@
+@import '../../style/variables.scss';
+.block {
+    display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 1.5rem;
+grid-row-gap: 1.5rem;
+}
+.h1{
+    margin: 0 auto;
+    border-bottom: 2px solid $tamna-braon;
+    border-top: 2px solid $tamna-braon;
+        width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 5rem;
+    margin-bottom: 2rem;
+    span {
+        text-transform: lowercase;
+        font-weight: bold;
+        font-size: 2.2rem;
+        color: $tamna-braon;
+        
+    }
+}
+@media (max-width:300px) {
+    * {
+        font-size: 30%;
+    }
+    .block {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    
+}
+@media (min-width:301px) and (max-width:416px) {
+    * {
+        font-size: 45%;
+    }
+    .block {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media (min-width:412px) and (max-width: 576px) {
+    * {
+        font-size: 50%;
+    }
+    .block {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width:577px) and (max-width:1024px) {
+    * {
+        font-size: 65%;
+    }
+    .block {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

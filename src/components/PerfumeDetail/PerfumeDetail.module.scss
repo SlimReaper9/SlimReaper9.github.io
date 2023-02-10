@@ -1,0 +1,151 @@
+@import '../../style/variables.scss';
+.main {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    .info{
+        display: flex;
+        justify-content: flex-start;
+        gap: 1rem;
+        flex-direction: column;
+        .designer{
+            font-size: 2rem;
+            font-weight: 200;
+            text-transform: uppercase;
+            color: $roze;
+        } 
+        .title{
+            font-size: 3rem;
+            font-weight: 500;
+            color: $tamna-braon;
+        }
+        .rating{
+            font-size: 2rem;
+            font-weight: 500;
+            color: $tamna-braon;
+            img{
+                width: 1.5rem;
+                margin-left: .5rem;
+            }
+        }
+        .about{
+            font-size: 1.5rem;
+            padding-right: 2rem;
+        }
+        .box {
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            .element {
+                width: 5rem;
+                height: 5rem;
+                text-align: center;
+                img{
+                    width: 60%;
+                    height: 60%;
+                }
+                .vote{
+                    margin: 1rem auto;
+                    width: 80%;
+                    height: .5rem;
+                    background-color: $roze;
+                    .percent{
+                        height: 100%;
+                        background-color: $tamna-braon;                      
+                    }
+                }
+            }
+        }
+    }
+    .imageBox{
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 4rem;
+        font-weight: 500;
+        color: $tamna-braon;
+        .country {
+           display: flex;
+           align-items: center;
+           justify-content: center;
+            img{
+                margin-left: 1rem;
+                width: 3rem;
+            height: 3rem;
+            }
+        }
+    }
+}
+@media (min-width:301px) and (max-width:416px) {
+    .main {
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+    }
+    .main .info .box {
+        justify-content: center;
+    }
+    .main .imageBox {
+       
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .main .imageBox img{
+        width: 60%;
+        text-align: center;
+    }
+}
+.comments{
+    text-align: center;
+    :nth-child(1) {
+        margin: 0 auto;
+        border-bottom: 2px solid $tamna-braon;
+        border-top: 2px solid $tamna-braon;
+            width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 5rem;
+        margin-bottom: 2rem;
+        text-transform: lowercase;
+        font-weight: bold;
+        font-size: 2.2rem;
+        color: $tamna-braon;    
+    }
+    textarea{
+        width: 80%;
+        padding: 1rem;
+        border: 1px solid $roze;
+        height: 7rem;
+        font-size: 1.7rem;
+        background-color: $bela;
+        color: $tamna-braon;
+        border-radius: 1rem;
+        margin-bottom: 1rem;
+    }
+    .button {
+        margin: 0 auto;
+        background-color: $roze;
+        width: 20rem;
+        font-size: 1.7rem;
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+        color: $tamna-braon;
+    }
+    .button:hover{
+        color: $bela;
+        cursor: pointer;
+    }
+    .comm {
+        font-size: 1.7rem;
+        color: $tamna-braon;
+        text-align: left;
+        background-color: $bela;
+        padding: 2rem 1rem ;
+        margin-top: 1rem;
+    }
+}

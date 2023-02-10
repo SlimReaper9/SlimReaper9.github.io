@@ -1,23 +1,21 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation } from "swiper";
-
 import 'swiper/css';
 import s from './Recomended.module.scss'
-import dior from '../../assets/dior.jpg'
-import PDM from '../../assets/PDM.jpg'
-import chanel from '../../assets/chanel.jpeg'
-import gucci from '../../assets/gucci.webp'
-const Recomended = () => {
-  
+import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+const Recomended = (props) => {
+  let menu = useSelector(state => state.allPerfumes.menu)
   
     return (
-    <div>
+    <div style={menu ==true ? {display: 'none'} : {display: ''}}>
         <div className={s.baner}>
         <span>Welcome back.These are recommended for you</span>
     </div>
           <Swiper
-   slidesPerView={4}
+          
+   slidesPerView={3}
    spaceBetween={30}
    slidesPerGroup={4}
    loop={true}
@@ -25,18 +23,27 @@ const Recomended = () => {
    pagination={{
      clickable: true,
    }}
+   breakpoints={{
+    401: {
+      slidesPerView:3,
+      slidesPerGroup:3
+    },
+    576: {
+      slidesPerView:4,
+      slidesPerGroup:4
+    }
+  }}
    navigation={true}
    modules={[Pagination, Navigation]}
    className={s.slider}
  >
-  <SwiperSlide className={s.slide} ><img  src={PDM}></img></SwiperSlide>
-   <SwiperSlide className={s.slide}><img  src={chanel}></img></SwiperSlide>
-   <SwiperSlide className={s.slide}><img  src={dior}></img></SwiperSlide>
-   <SwiperSlide className={s.slide}><img src={gucci}></img></SwiperSlide>
-   <SwiperSlide className={s.slide} ><img  src={PDM}></img></SwiperSlide>
-   <SwiperSlide className={s.slide}><img  src={chanel}></img></SwiperSlide>
-   <SwiperSlide className={s.slide}><img  src={dior}></img></SwiperSlide>
-   <SwiperSlide className={s.slide}><img src={gucci}></img></SwiperSlide>
+  
+   {props.perfumes.map((elem,key) => {
+    if(elem.rating >= 9){
+      return <SwiperSlide className={s.slide}><div><Link to={'/perfumeDetail/' + elem.id}><img src={elem.imageUrl}></img></Link></div></SwiperSlide>
+    }
+   
+   })}
 
  </Swiper>
  <div className={s.offer}>

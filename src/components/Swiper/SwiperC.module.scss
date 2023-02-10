@@ -3,3 +3,19 @@
     height: 60rem;
     color: red;
 }
+@media (min-width:301px) and (max-width:416px) {
+    .sliderimg {
+        height: 30rem;
+    }
+}
+@media (min-width:412px) and (max-width: 576px) {
+    .sliderimg {
+        height: 35rem;
+    }
+}
+@media (min-width:577px) and (max-width:1024px) {
+    .sliderimg {
+        height: 45rem;
+    }
+}
+

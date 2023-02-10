@@ -1,0 +1,80 @@
+@import '../../style/variables.scss';
+.emptyCart {
+    text-align: center;
+    height: 80vh;
+        div{
+            margin: 3rem 0;
+        }
+        span {
+            font-size: 2.6rem;
+            font-weight: 500;
+            color: $tamna-braon;
+            
+        }
+        button {
+            font-size: 2rem;
+            background-color: $roze;
+            padding: 1rem 2rem;
+        }
+        button:hover{
+            color: $bela;
+            cursor: pointer;
+        }
+}
+.cartItemsBox{
+    display: grid;
+grid-template-columns: repeat(1, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 10px;
+grid-row-gap: 5px;
+}
+.box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    .total{
+        font-size: 2rem;
+        color: $tamna-braon;
+        margin-right: 2rem;
+    }
+    .clear {
+        width: 10%;
+        text-align: center;
+        margin-left: -5rem;
+        img {
+            width: 25%;
+            cursor: pointer;
+        }
+    }  
+}
+.pay {
+    text-align: center;
+    font-size: 2rem;
+    background-color: $roze;
+    width: 20%;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+.pay:hover{
+    cursor: pointer;
+    color: $bela;
+}
+@media (max-width : 480px) {
+    .cartItemsBox{
+    grid-template-columns: repeat(2, 1fr);
+    }
+    .emptyCart img {
+        width: 100%;
+    }
+    .cart .box .clear img{
+        width: 2rem;
+        margin-left: 3.5rem;
+    }
+    .cart .pay {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        margin-bottom: 1rem;
+    }
+}

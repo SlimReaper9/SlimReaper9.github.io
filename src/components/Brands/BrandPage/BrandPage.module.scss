@@ -1,0 +1,115 @@
+@import '../../../style/variables.scss';
+.titleHeader {
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    img{
+        width: 10rem;
+        aspect-ratio: 1;
+        object-fit: contain;
+    }
+}
+.about {
+    margin: 1rem auto;
+    width: 50%;
+    font-weight: 400;
+    color: $tamna-braon;
+    font-size: 1.6rem;
+    height: 20rem;
+    overflow-y: scroll;
+    padding: 2rem 3rem;
+    text-align: justify;
+    border-radius: 1rem;
+}
+.baner {
+    margin: 1rem auto;
+    border-bottom: 2px solid $tamna-braon;
+    border-top: 2px solid $tamna-braon;
+        width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 5rem;
+    margin-bottom: 2rem;
+    span {
+        text-transform: lowercase;
+        font-weight: bold;
+        font-size: 2.2rem;
+        color: $tamna-braon;
+        
+    }
+}
+.ad{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .perfumes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 2.7rem;
+        padding-left: 1rem;
+        
+        span{
+            color: $roze;
+            font-size: 3rem;
+            padding-bottom: 2rem;
+        }
+        a{
+            margin-bottom: 2rem;
+            color: $bela;
+        
+        }
+        a:hover{
+            text-decoration: underline;
+            color: $roze;
+        }
+    }
+    img{
+        max-width: 70%;
+        object-fit: contain;
+        border-left: .5rem solid $roze;
+    }
+}
+.slider {
+    max-height: 50rem;
+    width: 70%;
+    .slide {
+        width: calc((100% - 4rem)/3);
+        box-shadow: 1;
+        text-align: center;
+        a{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 2rem;
+            font-style: italic;
+            color: $tamna-braon;
+        }
+        img{
+             width: 60%;
+             object-fit: contain;
+            }
+        
+        
+    }
+}
+@media (min-width:301px) and (max-width:416px){
+    .ad{
+        flex-direction: column-reverse;
+    }
+    .ad img {
+        max-width: 100%;
+        border-left: none;
+    }
+    .ad .perfumes {
+        margin-top: 1rem;
+    }
+    .about{
+        width: 85%;
+    }
+    .slider{
+        width: 100%;
+    }
+}

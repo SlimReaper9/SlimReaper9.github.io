@@ -17,10 +17,30 @@
         
     }
 }
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto;
+    div{
+        text-align: center;
+        margin: 0 .5rem;
+        line-height: 3rem;
+        font-weight: 500;
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.6rem;
+        border: 1px solid $roze;
+    }
+    div:hover{
+        background-color: $tamna-braon;
+        color: $roze;
+        cursor: pointer;
+    }
+}
 .shop {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 1rem;
     grid-row-gap: 1rem;
     }
@@ -36,7 +56,7 @@
     }
     @media (min-width:301px) and (max-width:416px) {
         * {
-            font-size: 30%;
+            font-size: 40%;
         }
         .shop {
             grid-template-columns: repeat(1, 1fr);

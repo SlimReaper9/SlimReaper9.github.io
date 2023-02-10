@@ -5,7 +5,24 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    position: relative;
+    .count {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 4rem;
+        height: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $roze;
+        border-radius: 0px 0px 0px 60%;
+        span{
+            font-size: 1.7rem;
+            color: $tamna-braon;
+            font-weight: 700;
+        }
+    }
     .image{
         margin-bottom: 3rem;
         text-align: center;
@@ -44,6 +61,25 @@
             font-size: 1.4rem;
             font-weight: 600;
         }
+    }
+    .button {
+        border-radius: 5%;
+        color: $tamna-braon;
+        display: flex;
+        width: 40%;
+        font-size: 1.7rem;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem 0;
+        padding: .5rem 0;
+        font-weight: 600;
+        cursor:pointer;
+        
+        
+    }
+    .button:hover {
+        background-color: $roze;
+        color: $bela;
     }
 }
 .block:hover{

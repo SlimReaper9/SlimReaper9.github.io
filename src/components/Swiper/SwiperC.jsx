@@ -9,9 +9,13 @@ import { Autoplay,EffectFade} from 'swiper'
 import 'swiper/css';
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
+import { useSelector } from 'react-redux'
 
 const SwiperC = () => {
+  let menu = useSelector(state => state.allPerfumes.menu)
   return (
+    
+
     <Swiper
     modules={[Autoplay,EffectFade]}   
     effect={"fade"}
@@ -21,6 +25,7 @@ const SwiperC = () => {
    slidesPerView={1}
    onSlideChange={() => console.log('slide change')}
    onSwiper={(swiper) => console.log(swiper)}
+   style={menu ==true ? {display: 'none'} : {display: ''}}
  >
    <SwiperSlide><img className={s.sliderimg} src={PDM}></img></SwiperSlide>
    <SwiperSlide><img className={s.sliderimg} src={chanel}></img></SwiperSlide>
@@ -28,6 +33,7 @@ const SwiperC = () => {
    <SwiperSlide><img className={s.sliderimg} src={gucci}></img></SwiperSlide>
    ...
  </Swiper>
+
   )
 }
 
