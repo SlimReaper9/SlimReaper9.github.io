@@ -9,12 +9,12 @@ import { useDispatch, useSelector } from 'react-redux'
 import { setMenu } from '../../redux/perfumeSlice'
 const Header = () => {
     const menu = useSelector(state => state.allPerfumes.menu)
-    let dispatch = useDispatch()
-    let showMenu = () => {
+    const dispatch = useDispatch()
+    const showMenu = () => {
       dispatch(setMenu(false));
       document.body.style.overflow = ''
     }
-  let count = useSelector(state => state.cart.cart.reduce((sum,elem) => {
+    const count = useSelector(state => state.cart.cart.reduce((sum,elem) => {
     return sum + elem.count
   },0))
   return (

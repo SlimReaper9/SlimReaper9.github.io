@@ -4,8 +4,8 @@ import { specialOfferBox } from '../../constants/constant'
 import s from './SpecialOfferBox.module.scss'
 
 const SpecialOfferBox = () => {
-  let menu = useSelector(state => state.allPerfumes.menu)
-  let offerArr = specialOfferBox.map((elem,id) => {
+  const menu = useSelector(state => state.allPerfumes.menu)
+  const offerArr = specialOfferBox.map((elem,id) => {
     return <div className={s.box} style={{background:`url(${elem.imgUrl}) no-repeat center`}}>
       <div className={s.title}>{elem.title}</div>
     </div>

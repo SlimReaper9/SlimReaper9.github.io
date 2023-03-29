@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom'
 import { addToCart } from '../../../redux/cartSlice'
 import s from './PerfumeBlock.module.scss'
 const PerfumeBlock = (props) => {
-  let dispatch = useDispatch()
-  let cart = useSelector(state => state.cart.cart);
+  const dispatch = useDispatch()
+  const cart = useSelector(state => state.cart.cart);
   const [total,setTotal] = useState(0)
  
   return (

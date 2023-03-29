@@ -1,4 +1,7 @@
 @import '../../style/variables.scss';
+.section{
+    min-height: 80vh;
+}
 .block {
     display: grid;
 grid-template-columns: repeat(4, 1fr);

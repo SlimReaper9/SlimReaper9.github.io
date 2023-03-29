@@ -7,13 +7,14 @@ import {useDispatch, useSelector} from 'react-redux'
 import { useEffect } from 'react'
 import { brandsAPIThunk, perfumeAPIThunk } from '../../redux/perfumeSlice'
 import { Link } from 'react-router-dom'
+import Loader from '../Loader/Loader'
 const Home = () => {  
-   let brands = useSelector(state => state.allPerfumes.brands)
-   let perfumes = useSelector(state => state.allPerfumes.perfumes)
+   const brands = useSelector(state => state.allPerfumes.brands)
+   const perfumes = useSelector(state => state.allPerfumes.perfumes)
   
-   let dispatch = useDispatch()
+   const dispatch = useDispatch()
   useEffect(()=>{
-    let data = {
+    const data = {
       filter : '',
       page: ''
     }
@@ -22,7 +23,8 @@ const Home = () => {
   },[])
   
   return (
-    <div> 
+    <>
+    {Object.keys(brands).length === 0 ? <Loader/> : <div> 
       <section className={s.home}>   
       
       <SwiperC/>
@@ -37,7 +39,8 @@ const Home = () => {
 <Recomended perfumes = {perfumes} />
 </section>
 <SpecialOfferBox/>
-    </div>
+    </div>}
+    </>
   )
   }
 export default Home

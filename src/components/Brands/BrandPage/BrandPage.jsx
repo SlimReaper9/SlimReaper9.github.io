@@ -6,11 +6,12 @@ import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useParams,Link } from 'react-router-dom'
 import { brandDetailApiThunk, removeBrandOrPerfume ,getBrandPerfume} from '../../../redux/perfumeSlice'
+import Loader from '../../Loader/Loader';
 const BrandPage = () => {
-    let {id} = useParams()
-    let brandDetail = useSelector(state => state.allPerfumes.brandDetail)
-    let brandPerfume = useSelector (state => state.allPerfumes.brandPerfume)
-    let dispatch = useDispatch();
+  const {id} = useParams()
+  const brandDetail = useSelector(state => state.allPerfumes.brandDetail)
+  const brandPerfume = useSelector (state => state.allPerfumes.brandPerfume)
+  const dispatch = useDispatch();
   useEffect(() => {
   
     dispatch(brandDetailApiThunk(id))
@@ -21,7 +22,7 @@ const BrandPage = () => {
   }, [id])
  
     return (
-    <div>{Object.keys(brandDetail).length === 0 ? <div>LOADING</div> : 
+    <div>{Object.keys(brandDetail).length === 0 ? <Loader/> : 
     <>
       <div className={s.titleHeader}><img src={brandDetail[0].imageUrl}></img></div>
       <div className={s.ad}><div className={s.perfumes}>

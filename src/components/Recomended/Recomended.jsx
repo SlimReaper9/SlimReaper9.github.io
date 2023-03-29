@@ -6,7 +6,7 @@ import s from './Recomended.module.scss'
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 const Recomended = (props) => {
-  let menu = useSelector(state => state.allPerfumes.menu)
+  const menu = useSelector(state => state.allPerfumes.menu)
   
     return (
     <div style={menu ==true ? {display: 'none'} : {display: ''}}>

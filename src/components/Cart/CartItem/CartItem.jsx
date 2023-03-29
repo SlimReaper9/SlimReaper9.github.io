@@ -6,7 +6,7 @@ import minus from '../../../assets/minus-solid.svg'
 import { useDispatch } from 'react-redux'
 import { deleteCategory, setCountMinus, setCountPlus } from '../../../redux/cartSlice'
 const CartItem = (props) => {
-    let dispatch = useDispatch()
+  const dispatch = useDispatch()
   return (
     <div className={s.item}>
         

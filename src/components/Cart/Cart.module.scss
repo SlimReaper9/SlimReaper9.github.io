@@ -21,6 +21,18 @@
             cursor: pointer;
         }
 }
+.cart{
+    min-height: 80vh;
+
+    .totalItems{
+        text-align: center;
+        font-size: 2.6rem;
+        color: $tamna-braon;
+        border-bottom: .2rem solid $roze;
+        padding-bottom: 1rem;
+        font-weight: 500;
+    }
+}
 .cartItemsBox{
     display: grid;
 grid-template-columns: repeat(1, 1fr);
@@ -63,7 +75,7 @@ grid-row-gap: 5px;
 }
 @media (max-width : 480px) {
     .cartItemsBox{
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     }
     .emptyCart img {
         width: 100%;

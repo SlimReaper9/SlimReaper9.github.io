@@ -5,7 +5,7 @@ import {media,cards} from '../../constants/constant'
 import { useSelector } from 'react-redux';
 const Footer = () => {
   const menu = useSelector(state => state.allPerfumes.menu)
-  let scrollTop = () => {
+  const scrollTop = () => {
     window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
  }
   return (
@@ -16,7 +16,7 @@ const Footer = () => {
               <Link to='/about' onClick={() => scrollTop()}>About</Link>
               <Link to='/shop' onClick={() => scrollTop()}>Shop</Link>
               <Link to='/brands' onClick={() => scrollTop()}>Brands</Link>
-              <Link to='contact' onClick={() => scrollTop()}>Contact</Link>
+             
             </div>
             <div className={s.media}>
               {media.map((elem,key) => {

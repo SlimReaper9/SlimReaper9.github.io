@@ -6,6 +6,7 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2rem;
+    min-height: 55vh;
     .info{
         display: flex;
         justify-content: flex-start;
@@ -30,6 +31,11 @@
                 width: 1.5rem;
                 margin-left: .5rem;
             }
+        }
+        .price{
+            font-size: 3rem;
+            margin-top: 2rem;
+            padding-left: 1rem;
         }
         .about{
             font-size: 1.5rem;

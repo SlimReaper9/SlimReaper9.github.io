@@ -91,3 +91,15 @@
     }
               }
     }
+@media (max-width: 500px){
+    .item .price {
+        flex-direction: column;
+        padding-left: 1rem;
+        span {
+            line-height: normal;
+        }
+    }
+    .box {
+        display: block;
+    }
+}

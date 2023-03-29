@@ -8,11 +8,12 @@ import star from '../../assets/star-regular.svg'
 import { seasonLogos } from '../../constants/constant';
 import franceFlag from '../../assets/france.png'
 import italyFlag from '../../assets/italy.png'
+import Loader from '../Loader/Loader';
 const PerfumeDetail = () => {
-    let {id} = useParams();
-    let dispatch = useDispatch()
-    let perfumeDetail = useSelector(state => state.allPerfumes.perfumeDetail)
-    let comments = useSelector(state => state.allPerfumes.comments)
+    const {id} = useParams();
+    const dispatch = useDispatch()
+    const perfumeDetail = useSelector(state => state.allPerfumes.perfumeDetail)
+    const comments = useSelector(state => state.allPerfumes.comments)
     const [comment,setComment] = useState('')
     useEffect(() => {
       dispatch(perfumeDetailApiThunk(id))
@@ -22,10 +23,10 @@ const PerfumeDetail = () => {
     }
       
     }, [id])
-    let percent = [perfumeDetail.winter,perfumeDetail.spring,perfumeDetail.summer,perfumeDetail.fall,perfumeDetail.day,perfumeDetail.night]   
+    const percent = [perfumeDetail.winter,perfumeDetail.spring,perfumeDetail.summer,perfumeDetail.fall,perfumeDetail.day,perfumeDetail.night]   
     return (
     <section>
-   <><div className={s.main}>
+  <>{Object.keys(perfumeDetail).length === 0 ? <Loader/> : <><div className={s.main}>
         <div className={s.info}>
             <Link to={'/brands/' + perfumeDetail.brandId}><div className={s.designer}>{perfumeDetail.designer == "D&G" ? 'Dolce & Gabbana' : perfumeDetail.designer}</div></Link>
             <div className={s.title}>{perfumeDetail.title}</div>
@@ -41,6 +42,7 @@ const PerfumeDetail = () => {
                 </div>
                 })}
             </div>
+            <div className={s.price}>{perfumeDetail.price} $</div>
             <div></div>
         </div>
         <div className={s.imageBox}>
@@ -55,7 +57,7 @@ const PerfumeDetail = () => {
         {comments.map((elem,key) => {
             return <div className={s.comm}>{elem.text}</div>
         })}
-        </div></>
+        </div></>}</> 
     </section>
   )
 }

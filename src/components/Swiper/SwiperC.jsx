@@ -12,7 +12,7 @@ import "swiper/css/effect-fade";
 import { useSelector } from 'react-redux'
 
 const SwiperC = () => {
-  let menu = useSelector(state => state.allPerfumes.menu)
+  const menu = useSelector(state => state.allPerfumes.menu)
   return (
     
 
