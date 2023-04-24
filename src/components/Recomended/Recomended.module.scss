@@ -22,9 +22,45 @@
         width: calc((100% - 4rem)/4);
         box-shadow: 1;
         text-align: center;
-        img{
-             width: 70%;
+        .box{    
+            a{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                img{
+                  object-fit: contain;
+                  width: 80%;
+                   }
+                span{
+                    font-size: 1.6rem;
+                    font-weight: 600;
+                    width: 100%;
+                    padding: .4rem 0 .2rem;
+                }
+                :nth-child(2){
+                    margin-top: .5rem;
+                    border-top: .2rem solid black;
+                }
+                :nth-child(3) {
+                    font-style: italic;
+                    font-size: 1.4rem;
+                }
+
             }
+            }
+        .box:hover{
+            a{
+                span{
+                    
+                    background-color: $roze;
+                    opacity: 8;
+                }
+            }
+        }
+        
+        
         
         
     }

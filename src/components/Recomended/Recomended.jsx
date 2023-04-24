@@ -40,7 +40,7 @@ const Recomended = (props) => {
   
    {props.perfumes.map((elem,key) => {
     if(elem.rating >= 9){
-      return <SwiperSlide className={s.slide}><div><Link to={'/perfumeDetail/' + elem.id}><img src={elem.imageUrl}></img></Link></div></SwiperSlide>
+      return <SwiperSlide className={s.slide}><div className={s.box}><Link to={'/perfumeDetail/' + elem.id}><img src={elem.imageUrl}></img><span>{elem.title}</span><span>{elem.price} $</span></Link></div></SwiperSlide>
     }
    
    })}
