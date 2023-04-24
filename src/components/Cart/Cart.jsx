@@ -24,12 +24,25 @@ const Cart = () => {
       </div> :
     <section className={s.cart}>      
     <div className={s.totalItems}>Your Cart ({count} Items)</div>
-    <div className={s.cartItemsBox}>{cartItemsMap}</div>
-    <div className={s.box}>
-        <div className={s.total}>Total : {cartItems.totalPrice} $</div>
-        <div className={s.clear}><img title='Clear Cart' onClick={()=> dispatch(clearCart())} src={x}></img></div>      
+    <div className={s.cartHeader}>
+      <div className={s.description}>Description</div>
+      <div className={s.size}>Size</div>
+      <div className={s.quantity}>Quantity</div>
+      <div className={s.remove}>Remove</div>
+      <div className={s.price}>Price</div>
     </div>
-    <div className={s.pay}>checkout</div>
+    <div className={s.cartItemsBox}>{cartItemsMap}</div>
+    <div className={s.totals}>
+      <div className={s.delivery}><span>Delivery</span> <span>$0.00</span></div>
+      <div className={s.discount}><span>Discount</span> <span>$0.00</span></div>
+      <div className={s.subtotal}><span>Subtotal</span> <span>$0.00</span></div>
+      <div className={s.total}><span>Total</span><span>${cartItems.totalPrice}.00</span></div>
+    </div>
+    <div className={s.box}>
+        <div className={s.clear}><span>Delete your cart</span><img title='Clear Cart' onClick={()=> dispatch(clearCart())} src={x}></img></div>      
+        <div className={s.pay}>Checkout</div>
+    </div>
+    
 </section>}
     </>
   )

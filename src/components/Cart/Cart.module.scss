@@ -24,6 +24,31 @@
 .cart{
     min-height: 80vh;
     position: relative;
+    .cartHeader {
+        display: flex;
+        padding: 1rem 0 2rem;
+        border-bottom: .2rem solid rgb(207, 205, 205);
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 500;
+        .description {
+            width: 40%;
+        }
+        .size{
+            width: 13%;
+        }
+        .quantity{
+            width: 20%;
+        }
+        .remove {
+            width: 12%;
+        }
+        .price{
+            width: 15%;
+        }
+    }
     .totalItems{
         text-align: center;
         font-size: 2.6rem;
@@ -33,8 +58,35 @@
         font-weight: 500;
         margin-bottom: .5rem;
     }
+    .totals{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 3rem;
+        div {
+            width: calc((100% - 6rem)/4);
+            display: flex;
+            justify-content: space-around;
+            font-size: 3rem;
+            border: .2rem solid rgb(207, 205, 205);
+            padding: 2rem 0;
+            :nth-child(2) {
+                font-weight: 700;
+            }
+        }
+        .discount {
+            width: calc((100% - 6rem)/4);
+        }
+        .subtotal {
+            width: calc((100% - 6rem)/4);
+        }
+        .total {
+            width: calc((100% - 6rem)/4);
+        }
+    }
 }
 .cartItemsBox{
+
     display: grid;
 grid-template-columns: repeat(1, 1fr);
 grid-template-rows: 1fr;
@@ -47,16 +99,19 @@ grid-row-gap: 5px;
     justify-content: end;
     align-items: center;
     margin: 2rem 0;
-    .total{
-        font-size: 2rem;
-        color: $tamna-braon;
-    }
+    font-size: 4rem;
+    font-weight: 500;
+    
     .clear {
-        width: 10%;
-        text-align: center;
-        margin-right: -5rem;
+        width: 25%;
+        border: .2rem solid rgb(207, 205, 205);
+        justify-content: end;
+       display: flex;
+       align-items: center;
         img {
-            width: 25%;
+            margin-left: 2rem;
+            width: 15%;
+            height: 10%;
             cursor: pointer;
         }
     }  
@@ -64,30 +119,36 @@ grid-row-gap: 5px;
 .pay {
     text-align: center;
     font-size: 2rem;
-    background-color: $roze;
-    width: 20%;
-   position: absolute;
-   right: 0;
-    padding: 1rem 2rem;
+    padding: 2rem 2rem;
+    border: .2rem solid rgb(207, 205, 205);
+    width: 25%;
+  
+  
+    font-weight: 700;
 }
 .pay:hover{
     cursor: pointer;
     color: $bela;
+    background-color: $tamna-braon;
 }
 @media (max-width : 480px) {
     .cartItemsBox{
     grid-template-columns: repeat(1, 1fr);
+    }
+    .cart .totalItems {
+        margin-top: .5rem;
     }
     .emptyCart img {
         width: 100%;
     }
     .cart .box .clear img{
         width: 2rem;
-        margin-left: 3.5rem;
+       
     }
     .cart .pay {
         font-size: 1.5rem;
         line-height: 1.5rem;
         margin-bottom: 1rem;
+        margin-right: 2rem;
     }
 }
