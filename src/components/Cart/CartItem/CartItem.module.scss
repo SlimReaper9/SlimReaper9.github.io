@@ -6,7 +6,7 @@
     justify-content: center;
     padding: 1rem 0;
     position: relative;
-    border-bottom: .2rem solid rgb(207, 205, 205);
+    border-bottom: .1rem solid rgb(207, 205, 205);
     .description {
         width: 40%;
         display: flex;
@@ -22,11 +22,11 @@
             flex-direction: column;
             margin-left: 6rem;
             .designer{
-                font-size: 2rem;
+                font-size: 1.8rem;
                 font-weight: 600;
             }
             .name{
-                font-size: 1.6rem;
+                font-size: 1.4rem;
                 font-style: italic;
                 font-weight: 400;
             }
@@ -40,10 +40,10 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.5rem;
-            border: .3rem solid rgb(207, 205, 205);
-            height: 5.5rem;
-            width: 5.5rem;
+            font-size: 1.3rem;
+            border: .1rem solid rgb(207, 205, 205);
+            height: 4.5rem;
+            width: 4.5rem;
         }
     }
     .box {
@@ -56,36 +56,36 @@
             display: flex;
             flex-direction: row;
             align-items: center;
-            border: .3px solid rgb(207, 205, 205);
-            width: 16.5rem;
-            height: 5.5rem;
-            font-size: 5rem;
+            border: .2px solid rgb(207, 205, 205);
+            width: 12rem;
+            height: 4rem;
+            font-size: 3.5rem;
             .count {
                 font-size: 1.7rem;
                 font-weight: 700;
                 width: calc(100% / 3);
-                height: 5.5rem;
+                height: 4rem;
                display: flex;
                justify-content: center;
                align-items: center;
             }
             .minus{
                 width: calc(100% / 3);
-                height: 5.5rem;
+                height: 4rem;
                display: flex;
                justify-content: center;
                align-items: center;
-               border-right: .3rem solid rgb(207, 205, 205);
+               border-right: .2rem solid rgb(207, 205, 205);
                background-color: $tamna-braon;
                color: $bela;
             }
             .plus{
                 width: calc(100% / 3);
-                height: 5.5rem;
+                height: 4rem;
                display: flex;
                justify-content: center;
                align-items: center;
-               border-left: .3rem solid rgb(207, 205, 205);
+               border-left: .2rem solid rgb(207, 205, 205);
                background-color: $standardna;
                color: $bela;
             }
@@ -101,7 +101,7 @@
         }
     }
     .price {
-        font-size: 1.9rem;
+        font-size: 1.7rem;
         font-weight: 600;
         color: $tamna-braon;
         display: flex;
