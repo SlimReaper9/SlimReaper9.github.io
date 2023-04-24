@@ -13,7 +13,7 @@ const CartItem = (props) => {
         <div className={s.image}><img src={props.imageUrl}></img></div>
         <div className={s.designer}>{props.designer}</div>
         <div className={s.name}>{props.title}</div>
-        <div className={s.price}><span>Price :  </span>  {props.price} $</div>
+        <div className={s.price}><span>Price : </span> {props.price} $</div>
         <div className={s.box}>
           
           <div className={s.changer}><img src={minus} onClick={() => dispatch(setCountMinus(props.id))}></img> <span>{props.count >0 ? props.count : dispatch(deleteCategory(props.id))}</span> <img src={plus} onClick={()=> dispatch(setCountPlus(props.id))}></img></div>
