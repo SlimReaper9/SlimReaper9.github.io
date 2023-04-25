@@ -69,10 +69,10 @@
     img{
         min-width: 60%;
         max-width: 60%;
-        min-height: 70rem;
-        max-height: 70rem;
-        object-fit: cover;
-        border-left: .5rem solid $roze;
+        min-height: 60rem;
+        max-height: 60rem;
+        object-fit: contain;
+        
     }
 }
 .slider {
@@ -99,8 +99,9 @@
             color: $tamna-braon;
         }
         img{
-             width: 60%;
+             width: 50%;
              object-fit: contain;
+             mix-blend-mode: color-burn;
             }
         
         
