@@ -43,7 +43,8 @@ const Home = () => {
           breakpoints={{
            401: {
              slidesPerView:3,
-             slidesPerGroup:3
+             slidesPerGroup:3,
+             spaceBetween:20
            },
            576: {
              slidesPerView:4,

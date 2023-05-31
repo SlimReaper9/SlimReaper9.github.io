@@ -38,15 +38,17 @@ const Cart = () => {
     </div>
     <div className={s.cartItemsBox}>{cartItemsMap}</div>
     <div className={s.totals}>
+    <div className={s.total}><span>Total</span><span>${cartItems.totalPrice}.00</span></div>
+    <div className={s.subtotal}><span>Subtotal</span> <span>$0.00</span></div>
       <div className={s.delivery}><span>Delivery</span> <span>$0.00</span></div>
       <div className={s.discount}><span>Discount</span> <span>$0.00</span></div>
-      <div className={s.subtotal}><span>Subtotal</span> <span>$0.00</span></div>
-      <div className={s.total}><span>Total</span><span>${cartItems.totalPrice}.00</span></div>
-    </div>
-    <div className={s.box}>
-        <div className={s.clear}><span>Delete your cart</span><img title='Clear Cart' onClick={onClickDeleteCart} src={x}></img></div>      
+      
+     
+         
         <div className={s.pay}>Checkout</div>
+        <div className={s.clear}><span>Delete your cart</span><img title='Clear Cart' onClick={onClickDeleteCart} src={x}></img></div>   
     </div>
+
     
 </section>}
     </>

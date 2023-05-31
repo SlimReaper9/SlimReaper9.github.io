@@ -74,3 +74,12 @@
         opacity: 0.9;
     }
 }
+@media (max-width : 480px){
+    div{
+        .baner{
+            span{
+                font-size: 1rem;
+            }
+        }
+    }
+}
