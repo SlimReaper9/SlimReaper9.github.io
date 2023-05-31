@@ -2,7 +2,7 @@
   "name": "perfume-app-v2",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://IAmRussiaman.github.io",
+  "homepage": "https://slimreaper9.github.io/",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.0",
     "@testing-library/jest-dom": "^5.16.5",

@@ -1,5 +1,8 @@
 import React from 'react'
 import s from './Home.module.scss'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import { Pagination, Navigation, Autoplay } from "swiper";
 import SwiperC from '../Swiper/SwiperC'
 import Recomended from '../Recomended/Recomended'
 import SpecialOfferBox from '../SpecialOfferBox/SpecialOfferBox'
@@ -30,10 +33,37 @@ const Home = () => {
       <SwiperC/>
       
 </section>
-<section className={s.brands}  >
-  {brands.map((elem,key) => {
-    return <div className={s.circle}><Link to={'/brands/' + elem.id}><img src={elem.imageUrl}></img></Link></div>
+<section >
+<Swiper   
+          slidesPerView={4}   
+          spaceBetween={30}
+          
+          loop={true}
+          loopFillGroupWithBlank={true}
+          breakpoints={{
+           401: {
+             slidesPerView:3,
+             slidesPerGroup:3
+           },
+           576: {
+             slidesPerView:4,
+             slidesPerGroup:4
+           }
+         }}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false
+        }}
+          modules={[Pagination, Navigation,Autoplay]}
+          className={s.brandSlider}
+        >
+           {brands.map((elem,key) => {
+    return <SwiperSlide className={s.box}><Link to={'/brands/' + elem.id}><img src={elem.imageUrl}></img></Link></SwiperSlide>
   })} 
+
+       
+        </Swiper>
+
 </section>
 <section >
 <Recomended perfumes = {perfumes} />

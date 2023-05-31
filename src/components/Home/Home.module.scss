@@ -14,7 +14,7 @@
 section{
     max-width: 1200px;
     margin:0 auto;
-    padding:2rem;
+    padding:1rem;
  }
 
 .carousel {
@@ -22,25 +22,20 @@ section{
     background-color: $standardna;
 }
 
-.brands {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 2px solid $tamna-braon;
-    border-bottom: 2px solid $tamna-braon;
-    .circle {
-        width: 17rem;     
-        margin: 0 .5rem;
-        padding: 1rem;
-        img{
-           width: 100%;
-            aspect-ratio: 1;
-        object-fit: contain;
-            border-radius: 50%;    
-    }   
-    }
-    .circle:hover{
-        opacity: 0.5;
+.brandSlider {
+    max-height: 50rem;
+    .box{
+        width: calc((100% - 4rem)/4);
+        box-shadow: 1;
+        text-align: center;
+        a{
+            img{
+                object-fit: contain;
+                aspect-ratio: 3/2;
+                width: 70%;
+            }
+        }
+        
     }
 }
 
