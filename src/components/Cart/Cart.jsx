@@ -15,6 +15,11 @@ const Cart = () => {
   const count = cartItems.cart.reduce((sum,elem) => {
     return sum + elem.count
   },0)
+  const onClickDeleteCart = () => {
+    if(window.confirm("Are you sure u want to delete all cart items?")){
+      dispatch(clearCart());
+    }
+  }
   return (
     <>
     {cartItems.totalPrice == 0 ? <div className={s.emptyCart}>
@@ -39,7 +44,7 @@ const Cart = () => {
       <div className={s.total}><span>Total</span><span>${cartItems.totalPrice}.00</span></div>
     </div>
     <div className={s.box}>
-        <div className={s.clear}><span>Delete your cart</span><img title='Clear Cart' onClick={()=> dispatch(clearCart())} src={x}></img></div>      
+        <div className={s.clear}><span>Delete your cart</span><img title='Clear Cart' onClick={onClickDeleteCart} src={x}></img></div>      
         <div className={s.pay}>Checkout</div>
     </div>
     
